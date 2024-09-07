@@ -1,2 +1,3 @@
-# dotfiles (wip)
-These are my user-specific configuration files for Windows 11
+# dotfiles
+
+Work in Progress.
