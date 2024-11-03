@@ -1,0 +1,68 @@
+/* File Explorer Item Label */
+/* .monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+    font-family: 'Geist Mono', sans-serif !important;
+    font-weight:400 !important;
+} */
+
+/* Sidebar title */
+.composite.title {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-items: center !important;
+}
+
+/* .composite.title h2 {
+    font-family: 'Geist', sans-serif !important;
+} */
+
+/* .monaco-pane-view .pane>.pane-header h3.title {
+    font-family: 'Geist Mono', sans-serif !important;
+    font-weight: 500 !important;
+} */
+
+/* Project title's style at the top. */
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Project Title */
+.titlebar-left {
+    justify-content: flex-start !important;
+    flex-grow: 0 !important;
+    width: auto !important;
+}
+
+/* Search Label */
+.search-label {
+    /* font-family: 'Geist Mono' !important; */
+    font-size: 14px !important;
+    display: block;
+}
+
+/* Search icon */
+.search-icon {
+    display: none !important;
+}
+
+.codicon-search::before {
+    display: none !important;
+}
+
+.codicon-arrow-right, .codicon-arrow-left {
+    display: none !important;
+}
+
+.titlebar-right > * {
+    display: none !important;
+}
+
+.command-center-center {
+    width:  auto !important;
+}
+
+.windows {
+    font-family: 'Geist Mono', 'JetBrainsMono Nerd Font', Segoe WPC, Segoe UI, sans-serif;
+}

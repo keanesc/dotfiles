@@ -1,0 +1,129 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+i {
+    /* color: rgb(115 130 175 / 95%); */
+    color: rgb(195 232 234 / 100%);
+    /*color: rgb(219 182 156 / 95%);*/
+    /* color: rgb(233, 228, 173, 100%); */
+    /*color: rgb(8, 108, 134/ 95%);*/
+    margin-right: 7px;
+}
+
+body {
+    color: rgb(255 255 255 / 100%);
+    font-family: Geist, ui-monospace, monospace;
+    font-size: 11px;
+    /* font-weight: 500; */
+    overflow: hidden;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+#root {
+    background-color: rgb(0 0 0 / 0%);
+    /* border: 0px solid rgb(203 166 247 / 100%);
+    border-radius: 5px; */
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    padding: 0px 1.5vw;
+}
+
+.left,
+.center,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    justify-self: center;
+}
+
+.right {
+    justify-self: end;
+}
+
+.binding-mode,
+.tiling-direction,
+.network,
+.battery {
+    margin-right: 20px;
+}
+
+.workspaces {
+    display: flex;
+    align-items: center;
+}
+
+.workspace {
+    background: rgb(255 255 255 / 5%);
+    margin-right: 4px;
+    padding: 4px 8px;
+    color: rgb(255 255 255 / 90%);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &.displayed {
+        background: rgb(255 255 255 / 15%);
+    }
+
+    &.focused,
+    &:hover {
+        /* background: rgb(75 115 255 / 90%); */
+        background: rgb(195 232 234 / 70%);
+        /* background: rgb(219 182 156 / 80%); */
+        /* background: rgb(233, 228, 173, 70%); */
+        color: rgb(0, 0, 0, 100%);
+        /*background: rgb(8, 108, 134);*/
+    }
+}
+
+.binding-mode,
+.tiling-direction {
+    background: rgb(255 255 255 / 0%);
+    color: rgb(255 255 255 / 90%);
+    border-radius: 2px;
+    line-height: 1;
+    padding: 4px 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.binding-mode {
+    margin-left: 8px;
+}
+
+/*.cpu .high-usage {*/
+/*  color: #900029;*/
+/*}*/
+
+.battery {
+    position: relative;
+    left: 4px;
+}
+
+.battery .charging-icon {
+    position: absolute;
+    font-size: 7px;
+    left: -8px;
+    top: 3px;
+}
